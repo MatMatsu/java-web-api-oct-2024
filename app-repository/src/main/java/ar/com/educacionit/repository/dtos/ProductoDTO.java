@@ -4,9 +4,9 @@ public class ProductoDTO {
 	
 	private Long id;
 	private String titulo;
-	private Double precio;
+	private Float precio;
 	
-	public ProductoDTO(Long id, String titulo, Double precio) {
+	public ProductoDTO(Long id, String titulo, Float precio) {
 		setId(id);
 		setTitulo(titulo);
 		setPrecio(precio);
@@ -26,7 +26,7 @@ public class ProductoDTO {
 		this.titulo = titulo;
 	}
 
-	public void setPrecio(Double precio) {
+	public void setPrecio(Float precio) {
 		if (precio == null || precio < 0) {
 			throw new IllegalArgumentException("PRECIO no puede ser nulo ni menor a 0");
 		}
@@ -41,7 +41,7 @@ public class ProductoDTO {
 		return titulo;
 	}
 
-	public Double getPrecio() {
+	public Float getPrecio() {
 		return precio;
 	}
 
