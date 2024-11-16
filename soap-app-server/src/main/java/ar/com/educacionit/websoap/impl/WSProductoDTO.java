@@ -16,7 +16,7 @@ public class WSProductoDTO implements Serializable {
     public WSProductoDTO() {
 		// TODO Auto-generated constructor stub
 	}
-    public WSProductoDTO(Long id, String titulo, Double precio) {
+    public WSProductoDTO(Long id, String titulo, Float precio) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
@@ -30,7 +30,7 @@ public class WSProductoDTO implements Serializable {
     private String titulo;
 
     @XmlElement(name = "precio")
-    private Double precio;
+    private Float precio;
 
 	public Long getId() {
 		return id;
@@ -44,10 +44,10 @@ public class WSProductoDTO implements Serializable {
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
-	public Double getPrecio() {
+	public Float getPrecio() {
 		return precio;
 	}
-	public void setPrecio(Double precio) {
+	public void setPrecio(Float precio) {
 		this.precio = precio;
 	}
     

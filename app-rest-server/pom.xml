@@ -79,6 +79,13 @@
 			<scope>test</scope>
 		</dependency>
 		
+		<!-- LIBRERIAS PROPIAS -->
+		<dependency>
+		    <groupId>java-webapi-parent</groupId>
+		    <artifactId>app-service</artifactId>
+		    <version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		
 		
 	</dependencies>
 	<build>

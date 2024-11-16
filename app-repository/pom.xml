@@ -8,4 +8,12 @@
   <artifactId>app-repository</artifactId>
   <name>app-repository</name>
   <description>Repositorio de acceso a datos comunes</description>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>java-webapi-parent</groupId>
+  		<artifactId>app-domain</artifactId>
+  		<version>1.0.0-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
