@@ -2,7 +2,7 @@ package ar.com.educacionit.repository.dtos;
 
 public class ProductoDTO {
 	
-	private Long Id;
+	private Long id;
 	private String titulo;
 	private Double precio;
 	
@@ -16,7 +16,7 @@ public class ProductoDTO {
 		if (id == null || id < 0) {
 			throw new IllegalArgumentException("ID no puede ser nulo ni menor a 0");
 		}
-		Id = id;
+		this.id = id;
 	}
 
 	public void setTitulo(String titulo) {
@@ -34,7 +34,7 @@ public class ProductoDTO {
 	}
 
 	public Long getId() {
-		return Id;
+		return id;
 	}
 
 	public String getTitulo() {
@@ -47,7 +47,7 @@ public class ProductoDTO {
 
 	@Override
 	public String toString() {
-		return "{Id:" + Id + ", titulo:" + titulo + ", precio:" + precio + "}";
+		return "{Id:" + id + ", titulo:" + titulo + ", precio:" + precio + "}";
 	}
 
 	

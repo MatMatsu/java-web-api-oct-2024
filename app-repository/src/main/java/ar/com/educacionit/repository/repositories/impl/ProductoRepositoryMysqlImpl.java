@@ -15,6 +15,9 @@ public class ProductoRepositoryMysqlImpl implements ProductoRepository{
 
 	@Override
 	public ProductoDTO getById(Long id) {
+		//harcode
+		String sql = "SELECT * from producto where id="+id;
+		System.out.println(sql);
 		
 		// SIMULO QUE OBTENGO LOS DATOS DE LA DB
 		Long _id = id;
